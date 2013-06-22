@@ -53,6 +53,15 @@
         },
         {
             "path": "https://raw.github.com/novus/nvd3/master/nv.d3.min.js"
+        },
+        {
+            "path": "https://raw.github.com/DmitryBaranovskiy/raphael/v2.1.0/raphael-min.js"
+        },
+        {
+            "path": "https://raw.github.com/DmitryBaranovskiy/g.raphael/master/min/g.raphael-min.js"  
+        },
+        {
+            "path": "https://raw.github.com/DmitryBaranovskiy/g.raphael/master/min/g.line-min.js"   
         }
     ],
 

@@ -24,12 +24,32 @@ Ext.application({
     name: 'LineChartDemo',
 
     requires: [
-        'Ux.chart.Line'
+        'Ux.chart.Line',
+        'Ux.chart.RLine'
     ],
 
     launch: function() {
         // Initialize the main view
-        Ext.Viewport.add(Ext.widget('chartline'));
+        Ext.Viewport.add({
+                xtype: 'tabpanel',
+                fullscreen: true,
+                tabBarPosition: 'bottom',
+
+                items: [
+                    {
+                        title: 'NVD3',
+                        xtype: 'chartline'
+                    },
+                    {
+                        title: 'Raphael',
+                        xtype: 'rchartline',
+                        chartData: {
+                            x: [1, 2, 3, 4, 5, 6, 7],
+                            y: [12, 32, 23, 15, 17, 27, 22]
+                        }
+                    }
+                ]
+        });
     },
 
     onUpdated: function() {
