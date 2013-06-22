@@ -7,8 +7,6 @@ Ext.define('Ux.chart.Line',{
 
     initialize: function(){
 
-      this.callParent();
-
       nv.addGraph(Ext.bind(function(){
           var chart = nv.models.lineChart();
 

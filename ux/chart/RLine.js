@@ -21,8 +21,7 @@ Ext.define('Ux.chart.RLine',{
          }
     },
     initialize: function(){
-      this.callParent();
-
+      
       this.canvas = Raphael(this.innerElement.createChild({tag: "div", cls: 'raphael-chartWrapper'}).dom);
 
       this.on('painted',function(){
